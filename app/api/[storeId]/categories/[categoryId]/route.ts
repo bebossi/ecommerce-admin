@@ -115,7 +115,7 @@ export async function GET(
 
     return NextResponse.json(category);
   } catch (err) {
-    console.log("[CATEGORY_GET", err);
+    console.log("[CATEGORY_GET]", err);
     return new NextResponse("Internal Error", { status: 500 });
   }
 }
